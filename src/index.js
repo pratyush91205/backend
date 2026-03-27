@@ -6,7 +6,7 @@ dotenv.config({
 
 import connectDB from "./db/index.js";
 
-connectDB();
+// connectDB();
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 8000, () => {
@@ -16,4 +16,4 @@ connectDB()
   .catch((err) => {
     console.log("MONGO db connection failed !!! ", err);
   });
-console.log("MONGO_URI =", process.env.MONGODB_URL);
+//console.log("MONGO_URI =", process.env.MONGODB_URL);
